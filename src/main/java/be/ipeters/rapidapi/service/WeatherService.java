@@ -44,5 +44,6 @@ public class WeatherService {
     }
 
     public Call<WeatherResponse> getWeatherData(String newYork) {
+        return null;
     }
 }
