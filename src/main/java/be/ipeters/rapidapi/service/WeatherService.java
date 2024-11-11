@@ -1,10 +1,12 @@
 package be.ipeters.rapidapi.service;
 
+import be.ipeters.rapidapi.WeatherResponse;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import retrofit2.Call;
 
 import java.io.IOException;
 
@@ -39,5 +41,8 @@ public class WeatherService {
             e.printStackTrace();
             return "Error: Exception occurred while fetching weather data";
         }
+    }
+
+    public Call<WeatherResponse> getWeatherData(String newYork) {
     }
 }

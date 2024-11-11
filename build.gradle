@@ -36,7 +36,13 @@ dependencies {
 	implementation 'com.squareup.okhttp3:okhttp:4.9.3' // Latest version as of this example
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+// Add the Retrofit dependency to the build.gradle file
+		implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+		implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+		implementation 'com.google.code.gson:gson:2.8.9'
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
